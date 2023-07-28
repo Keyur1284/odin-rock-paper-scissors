@@ -47,7 +47,7 @@ function playGame ()
             playerScore++;
         }
 
-        else if (result === 'Draw')
+        else if (result === 'Draw!')
         {
             continue;
         }

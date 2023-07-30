@@ -7,11 +7,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
 </head>
+
 <body>
     
+    <div class="content d-flex flex-column justify-content-center align-items-center">
 
+        <div class="header display-3 p-5" style="font-weight: 600; color: da;">
+            <div>Rock Paper Scissors</div>
+        </div>
 
+        <div class="d-flex justify-content-evenly" style="width: 900px;">
+            <button class="card border border-3 border-rounded border-white p-2" id="rock">
+                <img src="images/rock.png" class="" alt="rock" style="border: 10px solid black;">
+            </button>
+
+            <button class="card border border-3 border-white p-2" id="paper">
+                <img src="images/paper.png" alt="paper" style="border: 10px solid black;">
+            </button>
+
+            <button class="card border border-3 border-white p-2" id="scissor">
+                <img src="images/scissor.png" alt="scissor" style="border: 10px solid black;">
+            </button>
+        </div>
+
+        <div class="result d-flex flex-column align-items-center">
+            <div id="result" class="mt-3 display-3"></div>
+            <div class="choices d-flex p-2 m-2 display-6 justify-content-evenly" style="width: 850px;">
+                
+                <div class="card border border-3 border-rounded border-white p-2 mt-3">
+                    <img id="player-choice" src="https://fav.farm/❔" alt="?">
+                </div>
+
+                <div class="card border border-3 border-rounded border-white p-2 mt-3">
+                    <img id="computer-choice" src="https://fav.farm/❔" alt="?">
+                </div>
+
+            </div>
+            <div class="choices d-flex p-2 m-2 gap-5 display-6 justify-content-center align-items-center" style="width: 850px;">
+                <div id="player-score" class=" text-center"> Player Score : 0</div>
+                <div id="computer-score" class=" text-center">Computer Score : 0</div>
+            </div>
+        </div>
+
+    </div>
+    
 </body>
+
+<script src="scripts.js"></script>
 </html>
